@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -27,20 +27,20 @@
         </ul>
 
         <div class="top-btnn">
-            <a href="#" class="h-btn">Contact Me</a>
+            <a href="#contact" class="h-btn">Contact Me</a>
         </div>
     </header>
 
     <section class="hero" id="home">
-        <div class="main-content">
+        <div class="main-content" data-aos="fade-in">
             <h4>Hi, There!</h4>
             <h1>I'm <span>Varun Das G</span></h1>
             <p>I aim to enhance my knowledge and skills through continuous learning and professional development
                 opportunities in the field of computer applications.</p>
             <div class="social">
-                <a href="#"><i class="ri-facebook-fill"></i></a>
-                <a href="#"><i class="ri-instagram-fill"></i></a>
-                <a href="#"><i class="ri-github-fill"></i></a>
+                <a href="https://www.facebook.com/varun.das.1217/"><i class="ri-facebook-fill"></i></a>
+                <a href="https://www.instagram.com/_v_a_r_u_n_d_a_s_/"><i class="ri-instagram-fill"></i></a>
+                <a href="https://github.com/varundasG"><i class="ri-github-fill"></i></a>
                 <a href="#"><i class="ri-mail-fill"></i></a>
             </div>
 
@@ -52,10 +52,10 @@
     </section>
 
     <section class="about" id="about">
-        <div class="about-img">
+        <div class="about-img" data-aos="zoom-in-down">
             <img src="img/about.jpg.jpeg" alt="varun">
         </div>
-       <div class="about-text">
+       <div class="about-text"data-aos="zoom-in-up">
            <h2>I am Web <span>Developer</span><br> & Designer</h2>
        
             <div class="exp-area">
@@ -85,7 +85,7 @@
                 </p>
           
             </div>
-            <a href="#" class="btn">View All Projects</a>
+            <a href="https://github.com/varundasG?tab=repositories" class="btn">View All Projects</a>
 
           </div>
 
@@ -93,15 +93,14 @@
 
     <!---services-->
     <section class="services" id="services">
-        <div class="center-text">
-            <h2>my <span>Services</span></h2>
+        <div class="center-text" data-aos="fade-down">
+            <h2>My <span>Services</span></h2>
         </div>
-        <div class="services-content">
+        <div class="services-content" data-aos="zoom-in-up">
             <div class="box">
                 <img src="img/s-1.svg" alt="varun">
                 <h3>UI/UX Design</h3>
-                <p>archana mandi ahn potti ahn pranthi archana
-                    etnh cheyana avalk vatt koodi poi no reksha</p>
+                <p>Build and design user interface elements like menus, widgets, page navigation buttons and search fields. </p>
                 <a href="#">
                     Download now
                     <i class="ri-arrow-right-line"></i>
@@ -110,8 +109,7 @@
             <div class="box">
                 <img src="img/s-2.svg" alt="varun">
                 <h3>Website Development</h3>
-                <p>archana mandi ahn potti ahn pranthi archana
-                    etnh cheyana avalk vatt koodi poi no reksha</p>
+                <p>Proficient in HTML, CSS, JavaScript and responsive design frameworks. </p>
                 <a href="#">
                     Download now
                     <i class="ri-arrow-right-line"></i>
@@ -120,8 +118,7 @@
             <div class="box">
                 <img src="img/s-3.svg" alt="imgage">
                 <h3>App Development</h3>
-                <p>archana mandi ahn potti ahn pranthi archana
-                    etnh cheyana avalk vatt koodi poi no reksha</p>
+                <p>Highly skilled Mobile Application Developer with extensive knowledge of mobile app development. </p>
                 <a href="#">
                     Download now
                     <i class="ri-arrow-right-line"></i>
@@ -132,11 +129,11 @@
     
     <!---projects-->
     <section class="project" id="project">
-        <div class="center-text">
+        <div class="center-text" data-aos="fade-down">
             <h2>My <span>Projects</span></h2>
         </div>
 
-        <div class="project-content">
+        <div class="project-content" data-aos="zoom-in-up">
             <div class="row">
                 <img src="img/port-1.png">
                 <div class="main-row">
@@ -180,11 +177,11 @@
 
     <!---contact-->
     <section class="contact" id="contact">
-        <div class="center-text">
+        <div class="center-text" data-aos="fade-down">
             <h2>Contact <span>Me</span></h2>
         </div>
 
-        <div class="contact-form">
+        <div class="contact-form" data-aos="zoom-in">
             <form action="">
                 <input type="text" placeholder="Your name" required>
                 <input type="email" placeholder="Email Address.." required>
@@ -206,5 +203,12 @@
 
     <!---js link-->
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        Offset: 300,
+        duration: 1400,
+      });
+    </script>
 </body>
 </html>
